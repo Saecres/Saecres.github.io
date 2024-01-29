@@ -13,47 +13,175 @@
     <!-- CSS Section -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <link rel="stylesheet" href="./content/app.css">
+    <link rel="stylesheet" href="./content/style.css">
 
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><i class="fa-solid fa-house"></i> INFT 2202</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i> Home </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="product.html"><i class="fa-solid fa-tag"></i> Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="service.html"><i class="fa-solid fa-truck-fast"></i> Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html"><i class="fa-solid fa-circle-user"></i> About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html"><i class="fa-solid fa-phone"></i> Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
+<body class="text-bg-dark scrollable-page" >
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-people-group"></i> Harmony Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html"><i class="fa-solid fa-folder"></i> Portfolio </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="service.html"><i class="fa-solid fa-bars"></i> Services </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html"><i class="fa-solid fa-street-view"></i> Team </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html"><i class="fa-solid fa-address-book"></i> Blog </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
-    <div class="container">
-        <h1 class="mb-5">Our Services</h1>
+<!-- List of services, stays open until clicked on again. Look at multiple services at a time -->
+<div class="accordion scrollable-accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" >
+                <i class="fa-solid fa-cookie-bite"></i>&nbsp;Baked Goods
+            </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                <strong>Indulge in the sweetness of life with our delectable baked goods.</strong>
+                Our passion for baking is a journey through taste, texture, and artistry. From custom cakes that tell your unique
+                story to a delightful array of cupcakes, artisan bread, and seasonal treats, each creation is a symphony of
+                flavors crafted with love, creativity, and an unwavering commitment to satisfying your sweet cravings.
+                </br>
+                </br><h5>Our Offerings:</h5>
+                <ul>
+                    <li><strong>Custom Cakes:</strong> Immerse yourself in the art of celebration with our personalized cakes, meticulously crafted for any occasion.</li>
+
+                    <li><strong>Cupcakes and Desserts:</strong> Explore a delightful variety of treats, each bite a journey into the realm of sweetness perfect for events and celebrations.</li>
+
+                    <li><strong>Artisan Breads:</strong> Experience the warmth and aroma of freshly baked artisanal bread and rolls, elevating your table.</li>
+
+                    <li><strong>Seasonal Treats:</strong> Capture the essence of each season with our specialized baked goods, a reflection of joy and festivity.</li>
+                </ul>
+            </div>
+        </div>
     </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                <i class="fa-solid fa-broom"></i>&nbsp;Housekeeping
+            </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                <strong>Experience the transformative power of a clean space.</strong> We provide professional cleaning services to keep your residential, commercial, or event spaces immaculate.
+                Our dedicated team ensures a thorough and efficient cleaning experience, leaving you with a refreshing and organized environment.
+                </br></br>
+                <h5>Our Services:</h5>
+                <ul>
+                    <li>
+                        <strong>Residential Cleaning:</strong>
+                        Immerse yourself in the luxury of a spotless home with our comprehensive cleaning services.
+                    </li>
 
+                    <li>
+                        <strong>Event Cleanup:</strong>
+                        Restore order and cleanliness to your space after the festivities with our meticulous post-event cleaning.
+                    </li>
+
+                    <li>
+                        <strong>Office Maintenance:</strong>
+                        Elevate your work environment with our regular cleaning services, creating a conducive and organized workspace.
+                    </li>
+
+                    <li>
+                        <strong>Move-In/Move-Out Cleaning:</strong>
+                        Begin anew with our deep cleaning services, ensuring a fresh start in a new home or a seamless transition.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                <i class="fa-solid fa-music"></i>&nbsp;Violin Performance
+            </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                <strong>Book our violinists to add a touch of elegance and emotional depth to your next event.
+                    Let the enchanting notes of the violin create unforgettable memories for you and your guests.</strong>
+                Embark on a melodic journey with our exceptional violin performance services.
+                Our skilled and passionate violinists are dedicated to creating an enchanting
+                atmosphere for your special moments. Whether it's a wedding, corporate event,
+                or a private celebration, our violinists bring the magic of classical and
+                contemporary tunes to elevate the ambiance and leave a lasting impression.
+                </br></br>
+                <h5>Performance Offerings:</h5>
+                <ol>
+                    <li>
+                        <strong>Solo Violin Performances:</strong>
+                        Immerse your event in the soulful sound of a solo violin, offering a unique and intimate musical experience.
+                    </li>
+                    <li>
+                        <strong>Ensemble Performances:</strong>
+                        Elevate the atmosphere with a captivating ensemble of violinists, harmonizing to create a rich and dynamic musical backdrop.
+                    </li>
+                    <li>
+                        <strong>Customized Musical Repertoire:</strong>
+                        Tailor the performance to suit your preferences by selecting from a diverse range of classical, pop, jazz, or traditional pieces.
+                    </li>
+                    <li>
+                        <strong>Event Types:</strong>
+                        <ul>
+                            <li>
+                                <strong>Weddings:</strong>
+                                <ul>
+                                    <li>Walk down the aisle to the timeless beauty of live violin music.</li>
+                                    <li>Create an enchanting atmosphere for the ceremony and reception.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Corporate Events:</strong>
+                                <ul>
+                                    <li>Add sophistication to corporate gatherings with live violin performances during networking sessions, dinners, and award ceremonies.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Private Celebrations:</strong>
+                                <ul>
+                                    <li>Make your private celebrations memorable with the emotive sounds of a violinist, creating a personalized and elegant experience.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Collaborations and Special Requests:</strong>
+                        Collaborate with our violinists to incorporate special requests or work alongside other musicians to create a unique musical fusion.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--https://getbootstrap.com/docs/5.3/components/card/-->
 <!-- Scripting Section -->
 <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="./scripts/app.js"></script>
+<script src="./scripts/main.js"></script>
+
 </body>
 </html>
