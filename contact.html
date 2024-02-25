@@ -13,67 +13,140 @@
     <!-- CSS Section -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <link rel="stylesheet" href="./content/app.css">
+    <link rel="stylesheet" href="./content/style.css">
 
 </head>
-<body>
-    <header>
+<body class="text-bg-dark scrollable-page">
+<header>
 
-    </header>
+</header>
 
-    <div class="container">
-        <h1 class="mb-5">Contact Us</h1>
+<div class="container">
+    <h1 class="mb-5 h1-center">Contact Us</h1>
+    <div id="messageArea"></div>
 
-        <div id="messageArea"></div>
+    <div class="row justify-content-lg-center g-3">
+        <form class ="col-lg-6 col-md-10 col-sm-10">
 
-        <div class="row justify-content-lg-center g-3">
-            <form class ="col-lg-6 col-md-10 col-sm-10">
+            <div class="input-group mb-3">
+                <span class="input-group-text">Full Name</span>
+                <input id="fullName" name="fullName" type="text" class="form-control"
+                       aria-describedby="Full Name" aria-label="Full Name Input" required>
+            </div>
 
-                <div class="input-group mb-3">
-                    <span class="input-group-text">Full Name</span>
-                    <input id="fullName" name="fullName" type="text" class="form-control"
-                   aria-describedby="Full Name" aria-label="Full Name Input" required>
-                </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Contact Number</span>
+                <input id="contactNumber" name="contactNumber" type="tel" class="form-control"
+                       aria-describedby="Contact Number" aria-label="Contact Number Input" required>
+            </div>
 
-                <div class="input-group mb-3">
-                    <span class="input-group-text">Contact Number</span>
-                    <input id="contactNumber" name="contactNumber" type="text" class="form-control"
-                           aria-describedby="Contact Number" aria-label="Contact Number Input" required>
-                </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Email Address</span>
+                <input id="emailAddress" name="emailAddress" type="email" class="form-control"
+                       aria-describedby="Email Address" aria-label="Email Address Input" required>
+            </div>
 
-                <div class="input-group mb-3">
-                    <span class="input-group-text">Email Address</span>
-                    <input id="emailAddress" name="emailAddress" type="text" class="form-control"
-                           aria-describedby="Email Address" aria-label="Email Address Input" required>
-                </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Subject Line</span>
+                <input id="subject" name="subject" class="form-control"
+                       aria-describedby="Subject" aria-label="Subject Input">
+            </div>
 
-                <div class="input-group mb-3">
-                    <span class="input-group-text">Your Message</span>
-                    <input id="message" name="message" class="form-control"
-                           aria-describedby="Message Area" aria-label="Message Area Input">
-                </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Your Message</span>
+                <input id="message" name="message" class="form-control"
+                       aria-describedby="Message Area" aria-label="Message Area Input">
+            </div>
 
-                <div class="input-group mb-3">
-                    <input id="subscribeCheckbox" type="checkbox" class="form-check-input" >
-                    <label class="form-check-label" for="subscribeCheckbox">Subscribe to our contact list!</label>
-                </div>
 
-                <button id="sendButton" type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Submit</button>
-                <button id="cancelButton" type="reset" class="btn btn-warning"><i class="fa-solid fa-left-long"></i> Cancel</button>
+            <button id="sendButton" type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Submit</button>
+            <button id="cancelButton" type="reset" class="btn btn-warning"><i class="fa-solid fa-left-long"></i> Cancel</button>
+            </br>
+            </br>
+        </form>
+    </div>
+    <p class="r">
+        1355 Kingston Rd
+        Pickering, Ontario L1V 1B8 &nbsp;
+        &nbsp; &nbsp; </br>Tel: (905) 683-7171 &nbsp;
+        &nbsp; | &nbsp; Kaitlingracep04@gmail.com
+    </p>
+</div>
 
-            </form>
+<div id="feedbackMessageArea"></div>
 
-            <div class="col-4 col-md-4">
-                <a href="contact-list.html" class="btn btn-primary"><i class="fa-solid fa-rectangle-list"></i> Show Contact List</a>
+<h1 class="h1-center">We Would Love to Hear From You</h1>
+<div class="row">
+    <div class="col"></div>
+    <div class="col-lg-6 login">
+        <div class="rating">
+            <span class="star" data-rating="5">&#9733;</span>
+            <span class="star" data-rating="4">&#9733;</span>
+            <span class="star" data-rating="3">&#9733;</span>
+            <span class="star" data-rating="2">&#9733;</span>
+            <span class="star" data-rating="1">&#9733;</span>
+            <input type="hidden" name="rating" id="rating" value="0">
+        </div>
+        <div class="input-group mb-3">
+                <textarea id="review" name="review" class="form-control" style="height: 200px;"
+                          aria-describedby="Message Area" aria-label="Review"></textarea>
+        </div>
+        <button id="reviewButton" type="submit" class="btn btn-outline-info">
+            <i class="fa-solid fa-envelope"></i>
+            Submit
+        </button>
+        <button id="cancelReviewButton" type="reset" class="btn btn-outline-info">
+            <i class="fa-solid fa-rotate-left"></i>
+            Cancel
+        </button>
+    </div>
+    <div class="col"></div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="ContactModal" tabindex="-1" role="dialog" aria-labelledby="Contact" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalTitle">
+                    Thank you for reaching out! Your message has been received. You will be redirected shortly.
+                </h5>
+            </div>
+            <div class="modal-body">
+                <p>We appreciate your interest and will get back to you as soon as possible.</p><br>
+                <p>Contact Information:</p>
+                <p id="modalFullName"></p>
+                <p id="modalEmailAddress"></p>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Error Modal -->
+<div class="modal fade" id="ContactErrorModal" tabindex="-1" role="dialog" aria-labelledby="Contact" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactErrorModalTitle">
+                    Oops! Something went wrong.
+                </h5>
+            </div>
+            <div class="modal-body">
+                <p>
+                    It seems like there was an issue with your submission. Please ensure all fields are filled
+                    out correctly and try again.
+                </p>
+                <p>If the issue persists, feel free to contact us directly using the provided contact information.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Scripting Section -->
 <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="./scripts/namespace.js"></script>
-<script src="./scripts/contact.js"></script>
-<script src="./scripts/app.js"></script>
+<script src="./scripts/main.js"></script>
+
 </body>
 </html>

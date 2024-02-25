@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kaitlin Penaranda">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Our Team</title>
+
+
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./content/style.css">
+
+</head>
+<body class="text-bg-dark" style="padding-bottom: 60px;">
+<header>
+
+</header>
+
+<h1 id="centered-h1">
+    Meet Our Team
+    <hr>
+</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <img id="image-k" src="images/kaitlin.jpg" class="img-fluid" alt="Kaitlin Penaranda">
+        </div>
+        <div class="col-md-auto">
+            <p class="centered-p" style="margin-left: 95px; margin-top: 0; margin-bottom: 0;">
+                Say hello to Kaitlin, the developer and creative force behind our team! Kaitlin brings a unique blend
+                of artistic flair and strategic thinking to our projects. Her imaginative approach to
+                challenges and keen eye for design make her an essential part of our creative journey.
+                Outside of work, Kaitlin enjoys exploring art exhibits, discovering new music, and
+                finding inspiration in the world around her.
+                </br></br>
+                <!-- Modal trigger on the text -->
+                <button type="button" class="btn btn-outline-info"
+                        onclick="document.getElementById('kaitlinModal').style.display='block'">
+                    More Details
+                </button>
+            </p>
+            </br></br></br></br></br></br>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modals for Team -->
+<div id="kaitlinModal" class="modal">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content bg-black">
+            <div class="modal-header">
+                <h5 class="modal-title">Kaitlin Penaranda</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                        onclick="document.getElementById('kaitlinModal').style.display='none'">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body bg-dark">
+                <p>Kaitlin's journey began with a passion for drawing, where she used a pencil to weave imaginative
+                    stories on paper. Transitioning to the violin, she explored the world of music, creating melodies
+                    that spoke volumes without words. Alongside her artistic pursuits, Kaitlin embraced the discipline
+                    of karate, cultivating strength and focus.
+                </p>
+                </br></br>
+                <p>In college, Kaitlin unexpectedly ventured into coding, discovering a new canvas for her creativity.
+                    Kaitlin's story is a testament to the diverse paths one can explore in a lifetime. From the strokes of a
+                    pencil to the harmonious tunes of a violin, and the disciplined moves of karate, she has woven a
+                    rich tapestry of experiences. Coding, the latest addition to her repertoire, is yet another medium
+                    through which Kaitlin continues to shape her narrative, showcasing the endless possibilities that a
+                    journey through art, music, and discipline can unfold.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripting Section -->
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./scripts/main.js"></script>
+
+</body>
+</html>

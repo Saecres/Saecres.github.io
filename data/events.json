@@ -1,0 +1,18 @@
+
+{
+  "events":
+  [
+    {
+      "title": "Summer Concert Series",
+      "date": "2024-07-25",
+      "location": "City Amphitheater",
+      "description": "Enjoy live music under the stars with our Summer Concert Series. Free admission for all!"
+    },
+    {
+      "title": "Food Festival",
+      "date": "2024-09-10",
+      "location": "Town Square",
+      "description": "Indulge in a variety of delicious cuisines from local vendors at our annual Food Festival."
+    }
+  ]
+}
